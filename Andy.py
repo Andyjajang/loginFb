@@ -1,6 +1,6 @@
 # loginFb
 Https://github.com/Andyjajang/loginFb
-#!/usr/bin/python
+#!/usr/bin/python2
 #FBcrack
 #facebook brute force attack
 #coded by 0MEST
