@@ -76,8 +76,8 @@ while True:
         try:
             word = open(wordlist, 'r').readlines()
             print G+"[+] Kode Nya Tersimpan \!/\n[+] E+Codes:",len(word)
-        except("IOError"):
-            print "[-] Format Salah!"
+     "):
+           
             sys.exit(1);
 
         for w in word:
@@ -119,7 +119,7 @@ while True:
         try:
             word = open(wordlist, 'r').readlines()
             print F+"[+] Kode Reset Tersimpan \!/\n[+] Kode:",len(word)
-        except("IOError"):
+        
             print "[-] input!!"
             sys.exit(1);
 
